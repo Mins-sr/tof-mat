@@ -54,7 +54,16 @@ frame_data = loader.load_frame("0001") # frame_idを指定
 
 ### アノテーション
 セグメンテーション学習には、ピクセルラベル（0=背景, 1-N=材質ID）が書き込まれた画像ファイルが必要です。
-データディレクトリ内に `*mask*` を含むファイル名（例: `frame_0001_mask.png`）として配置してください。
+
+#### 16bit記録データからのアノテーション作成
+付属のツール `scripts/maskgenerator.html` を使用して、記録データから直接マスクを作成できます。
+
+1. ブラウザで [maskgenerator.html](scripts/maskgenerator.html) を開きます。
+2. `RecInfo.json` と `RecImage_*.raw` を選択して読み込みます。
+3. 材質ラベルを選択し、マウスで領域を塗りつぶします。
+4. 「マスクを保存」ボタンで `frame_XXXX_mask.png` を出力します。
+
+出力されたマスクファイルは、データディレクトリ内に配置してください。
 
 ## プロジェクト構造（拡張後）
 
