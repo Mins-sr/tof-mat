@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.venv/
+
+# Data and Outputs (Large binary files)
+data/
+output/
+checkpoints*/
+*.npz
+*.raw
+*.json
+*.pth
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# External SDKs
+senSPure_SDK
+
+# Backend / Artifacts
+.gemini/
+brain/
