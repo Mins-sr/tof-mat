@@ -60,7 +60,9 @@ frame_data = loader.load_frame("0001") # frame_idを指定
 
 1. ブラウザで [maskgenerator.html](scripts/maskgenerator.html) を開きます。
 2. `RecInfo.json` と `RecImage_*.raw` を選択して読み込みます。
-3. 材質ラベルを選択し、マウスで領域を塗りつぶします。
+3. 描画ツールを選択します：
+   - **Brush**: マウスドラッグで自由に塗りつぶします。
+   - **Polygon**: 領域の頂点をクリックしていき、「多角形を塗りつぶし」で一括入力します。
 4. 「マスクを保存」ボタンで `frame_XXXX_mask.png` を出力します。
 
 出力されたマスクファイルは、データディレクトリ内に配置してください。
